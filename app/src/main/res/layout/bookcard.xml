@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/parent"
+    >
+
+
+
+
+    <com.google.android.material.card.MaterialCardView
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        app:cardElevation="8dp"
+        app:cardCornerRadius="10dp"
+        android:padding="10dp"
+        android:layout_margin="10dp"
+        android:id="@+id/parent2"
+        >
+
+
+        <RelativeLayout
+            android:layout_width="202dp"
+            android:layout_height="match_parent"
+            android:background="@color/white"
+            android:padding="10dp">
+
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/imagebookcard"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                app:cardCornerRadius="7dp">
+
+
+                <ImageView
+
+                    android:id="@+id/imagebook"
+                    android:layout_width="150dp"
+                    android:layout_height="240dp"
+
+                    android:src="@mipmap/library" />
+
+            </com.google.android.material.card.MaterialCardView>
+
+            <TextView
+                android:id="@+id/name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:maxWidth="150dp"
+                android:layout_below="@id/imagebookcard"
+                android:layout_marginTop="13dp"
+                android:text="book name"
+                android:textColor="#757575"
+                android:textSize="16sp" />
+
+            <ImageView
+                android:id="@+id/downbtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/imagebookcard"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="13dp"
+                android:layout_toLeftOf="@id/parent"
+                app:srcCompat="@drawable/ic_action_name" />
+
+            <RelativeLayout
+
+                android:id="@+id/expendeddetails"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/name">
+
+                <TextView
+                    android:id="@+id/first"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_margin="3dp"
+                    android:text="hello" />
+
+
+                <TextView
+                    android:id="@+id/second"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/first"
+                    android:layout_alignParentStart="true"
+                    android:layout_margin="3dp"
+                    android:text="hello" />
+
+
+                <TextView
+                    android:id="@+id/third"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/second"
+                    android:layout_alignParentStart="true"
+                    android:layout_margin="3dp"
+                    android:text="hello" />
+
+                <ImageView
+                    android:id="@+id/upbtn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/third"
+                    android:layout_alignParentEnd="true"
+                    android:src="@drawable/arrowup" />
+
+                <Button
+                    android:id="@+id/delete"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginBottom="10dp"
+                    android:padding="2dp"
+                    android:text="delete"
+                    android:textSize="8sp"
+                    app:backgroundTint="#FF4D4D" />
+                android:text="Button" />
+            </RelativeLayout>
+        </RelativeLayout>
+
+
+    </com.google.android.material.card.MaterialCardView>
+
+
+</RelativeLayout>
